@@ -14,7 +14,13 @@ body {
   box-sizing: inherit;
 }
 
+h1 {
+  text-shadow: 5px 5px 0 rgba(255, 0, 0, 1);
+  font-size: 50px;
+}
+
 header, footer {
+  min-height: 25vh;
   margin: 1em;
   color: black;
   display: flex;
@@ -32,6 +38,7 @@ ul li a {
   padding-right: 0.5em;
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .first-container {
