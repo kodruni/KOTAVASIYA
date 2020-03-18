@@ -33,10 +33,20 @@ function shadow(e) {
   const yWalk = Math.round((y / width * walk) - (walk / 8));
 
   text.style.textShadow = `
-  
-    
     ${yWalk * -0.5}px ${xWalk}px 0 rgba(255,0,0)
   `;
 }
-
 text.addEventListener('mousemove', shadow);
+
+// const nav = document.querySelector('.nav-container');
+// const topOfNav = nav.offsetTop;
+// function fixNav() {
+//   // console.log(topOfNav, window.scrollY);
+//   if (window.scrollY >= topOfNav) {
+//     document.body.classList.add('fixed-nav');
+//   } else {
+//     document.body.classList.remove('fixed-nav');
+//   }
+
+// }
+// window.addEventListener('scroll', fixNav);
