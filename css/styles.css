@@ -21,7 +21,7 @@ h1 {
 }
 
 header, footer {
-  color: black;
+  /* color: black; */
   display: flex;
   justify-content: center;
 }
@@ -47,14 +47,31 @@ nav ul {
 }
 
 ul li a {
-  padding: 2em;
-  color: white;
-  text-decoration: none;
+  padding: 1em;
+  margin: 2em;
+  color:  #ffd025;
   font-weight: bold;
+  text-decoration: none;
+  background: brown;
+  border-radius: 50px;
 }
 
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: blue;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
 .first-container {
-  padding-top: 7em;
+  padding-top: 8em;
   padding-bottom: 2em;
   min-width: 100vw;
   background-color: brown;
@@ -92,7 +109,6 @@ ul li a {
 .panel2 { background-image: url('/images/cat_band.jpg'); }
 .panel3 { background-image: url('/images/takeshi_catano.jpg'); }
 .panel4 { background-image: url('/images/kitty.jpg'); }
-.panel5 { background-color: aquamarine; }
 
 /* Flex Items */
 .panel > * {
